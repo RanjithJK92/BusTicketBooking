@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bus Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Bus Ticket Booking</h2>
+        <form action="#" method="POST">
+            <!-- Departure and Destination -->
+            <label for="departure">Departure Location</label>
+            <select id="departure" name="departure" required>
+                <option value="">Select Departure</option>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Chicago">Chicago</option>
+                <option value="San Francisco">San Francisco</option>
+            </select>
+
+            <label for="destination">Destination Location</label>
+            <select id="destination" name="destination" required>
+                <option value="">Select Destination</option>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Chicago">Chicago</option>
+                <option value="San Francisco">San Francisco</option>
+            </select>
+
+            <!-- Travel Date and Time -->
+            <label for="travelDate">Travel Date</label>
+            <input type="date" id="travelDate" name="travelDate" required>
+
+            <label for="travelTime">Travel Time</label>
+            <input type="time" id="travelTime" name="travelTime" required>
+
+            <!-- Personal Information -->
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <!-- Payment Option -->
+            <label for="payment">Payment Method</label>
+            <select id="payment" name="payment" required>
+                <option value="">Select Payment Method</option>
+                <option value="creditCard">Credit Card</option>
+                <option value="debitCard">Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button type="submit">Book Ticket</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Need help? <a href="#">Contact Us</a></p>
+    </div>
+
+</body>
+</html>
